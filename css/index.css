@@ -268,3 +268,12 @@ footer nav a:hover{
     animation-name: bottomNavBar;
     animation-duration: 2s;
 }
+
+.form label {
+    display: inline-block;
+    width: 150px;
+    margin: 7px 0;
+}
+.form:last-child {
+    margin-bottom: 20px;
+}
