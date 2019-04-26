@@ -103,6 +103,14 @@ p {
     padding-bottom: 20px;  
 }
 
+.a-top-content {
+    display: flex;
+    flex-flow: column nowrap;
+    padding-bottom: 20px;
+    border-bottom: 1px dashed #666666;
+    margin-bottom: 20px;
+}
+
 .middle-content {
     margin-bottom: 20px;
     border-bottom: 1px dashed black;
