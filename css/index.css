@@ -71,6 +71,24 @@ p {
     margin: 0 auto;
 }
 
+.navBar {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: flex-end;
+    justify-content: flex-start;
+    margin-bottom: 20px;
+}
+
+.navBar a {
+    text-decoration: none;
+    color: #666666;
+    padding: 0 5%;
+}
+
+.topImage {
+    margin-bottom: 20px;
+}
+
 .top-content {
     display: flex;
     flex-wrap: wrap;
@@ -111,6 +129,38 @@ p {
     align-items: center;
     justify-content: center;
 }
+
+.middle-content .boxes .b1 {
+    background: teal;
+}
+.middle-content .boxes .b2 {
+    background: gold;
+}
+.middle-content .boxes .b3 {
+    background: cadetblue;
+}
+.middle-content .boxes .b4 {
+    background: coral;
+}
+.middle-content .boxes .b5 {
+    background: crimson;
+}
+.middle-content .boxes .b6 {
+    background: forestgreen;
+}
+.middle-content .boxes .b7 {
+    background: darkorchid;
+}
+.middle-content .boxes .b8 {
+    background: hotpink;
+}
+.middle-content .boxes .b9 {
+    background: indigo;
+}
+.middle-content .boxes .b10 {
+    background: dodgerblue;
+}
+
 
 .bottom-content {
     display: flex;
