@@ -48,7 +48,7 @@ Edit this document to include your answers after each question. Make sure to lea
 
     align-items works on the cross axis.
 
-5. Explain why git is valuable to a team of developers.
+5. Explain why git is valuable to a team of developers. 
 
     Git allows you to make multiple commits that you can revert back to if needed.  It also makes collaborating on projects with other developers much easier by allowing you to merge branches.
 
