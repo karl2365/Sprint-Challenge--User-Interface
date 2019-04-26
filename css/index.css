@@ -66,6 +66,18 @@ p {
     line-height: 1.4;
 }
 
+@keyframes topNavBar{
+    from {background: white; color: black}
+    to{background: black; color: white;}
+
+}
+
+@keyframes bottomNavBar{
+    from {background: black; color: white}
+    to{background: white; color: black;}
+    
+}
+
 .container {
     width: 800px;
     margin: 0 auto;
@@ -83,6 +95,14 @@ p {
     text-decoration: none;
     color: #666666;
     padding: 0 5%;
+}
+.navBar a:hover{
+    color: white;
+    background: black;
+    padding: 10px 10px 10px 10px;
+    margin-left: 40px;
+    animation-name: topNavBar;
+    animation-duration: 2s;
 }
 
 .topImage {
@@ -240,4 +260,11 @@ footer nav {
 footer nav a {
     color: white;
     text-decoration: none;
+}
+footer nav a:hover{
+    color: black;
+    background: white;
+    padding: 0 10px 10px 10px;
+    animation-name: bottomNavBar;
+    animation-duration: 2s;
 }
