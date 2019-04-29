@@ -66,9 +66,47 @@ p {
     line-height: 1.4;
 }
 
+@keyframes topNavBar{
+    from {background: white; color: black}
+    to{background: black; color: white;}
+
+}
+
+@keyframes bottomNavBar{
+    from {background: black; color: white}
+    to{background: white; color: black;}
+    
+}
+
 .container {
     width: 800px;
     margin: 0 auto;
+}
+
+.navBar {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: flex-end;
+    justify-content: flex-start;
+    margin-bottom: 20px;
+}
+
+.navBar a {
+    text-decoration: none;
+    color: #666666;
+    padding: 0 5%;
+}
+.navBar a:hover{
+    color: white;
+    background: black;
+    padding: 10px 10px 10px 10px;
+    margin-left: 40px;
+    animation-name: topNavBar;
+    animation-duration: 2s;
+}
+
+.topImage {
+    margin-bottom: 20px;
 }
 
 .top-content {
@@ -83,6 +121,49 @@ p {
     width: 48%;
     padding: 0 1%;
     padding-bottom: 20px;  
+}
+
+.a-top-content {
+    display: flex;
+    flex-flow: column nowrap;
+    padding-bottom: 20px;
+    border-bottom: 1px dashed #666666;
+    margin: 0 0 20px 0;
+}
+
+.a-top-content h2, .topP {
+    margin-left: 10px;
+}
+
+.contentOuter {
+    display: flex;
+    flex-flow: column;
+    margin-left: 10px;
+}
+
+.contentInner {
+    display: flex;
+
+}
+
+.contentInner article h2 {
+    margin-top: 10px;
+}
+
+.contentInner article a {
+    text-decoration: none;
+    padding: 5px 15px;
+    border: 1px solid black;
+    border-radius: 5px;
+    color: black;
+    display: inline-block;
+    margin: 10px 0 0 0;
+}
+
+.contentInner article .contentBorder {
+    border-bottom: 1px dashed black;
+    margin-bottom: 20px;
+    width: 92%;
 }
 
 .middle-content {
@@ -112,6 +193,38 @@ p {
     justify-content: center;
 }
 
+.middle-content .boxes .b1 {
+    background: teal;
+}
+.middle-content .boxes .b2 {
+    background: gold;
+}
+.middle-content .boxes .b3 {
+    background: cadetblue;
+}
+.middle-content .boxes .b4 {
+    background: coral;
+}
+.middle-content .boxes .b5 {
+    background: crimson;
+}
+.middle-content .boxes .b6 {
+    background: forestgreen;
+}
+.middle-content .boxes .b7 {
+    background: darkorchid;
+}
+.middle-content .boxes .b8 {
+    background: hotpink;
+}
+.middle-content .boxes .b9 {
+    background: indigo;
+}
+.middle-content .boxes .b10 {
+    background: dodgerblue;
+}
+
+
 .bottom-content {
     display: flex;
     margin: 0 2% 20px;
@@ -124,6 +237,10 @@ p {
 
 .bottom-content .text-container:last-child {
     padding-right: 0;
+}
+
+.bottomArticle {
+    margin: 10px 0 20px 10px;
 }
 
 footer {
@@ -143,4 +260,20 @@ footer nav {
 footer nav a {
     color: white;
     text-decoration: none;
+}
+footer nav a:hover{
+    color: black;
+    background: white;
+    padding: 0 10px 10px 10px;
+    animation-name: bottomNavBar;
+    animation-duration: 2s;
+}
+
+.form label {
+    display: inline-block;
+    width: 150px;
+    margin: 7px 0;
+}
+.form:last-child {
+    margin-bottom: 20px;
 }
